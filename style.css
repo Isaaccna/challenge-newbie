@@ -1,0 +1,113 @@
+/* GERAL ============================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100vw;
+  margin: 0;
+  
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  gap: 1rem;
+  
+}
+.card-head {
+  background-image: url(./images/image-product-mobile.jpg);
+  background-size: cover;
+  background-position-x:center;
+height: 250px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  width: 80vw;
+  margin: 24px auto 0 auto;
+  
+}
+/* .card-body:not:first-child {
+  align-items: center;
+} */
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  letter-spacing: 5px;
+  margin-bottom: 12px;
+}
+h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.card-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+}
+.price {
+  display: flex;
+}
+#tag {
+  color: hsl(157, 36%, 37%);
+
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+}
+#crossed {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: hsla(228, 12%, 48%, 0.5);
+  font-size: 13px;
+  line-height: 23px;
+  text-decoration-line: line-through;
+  margin-left: 24px;
+}
+button {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background-color: hsl(157, 36%, 37%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+@media screen and (min-width: 520px) {
+  body {
+    display: grid;
+    place-content: center;
+  }
+  .card {
+    flex-direction: row;
+  }
+  .card-head {
+    flex-basis: 50%;
+    background-image: url(./images/image-product-desktop.jpg);
+    height: unset;
+    
+  }
+  .card-body {
+    flex-basis: 50%;
+  }
+}
